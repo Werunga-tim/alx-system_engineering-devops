@@ -1,5 +1,3 @@
 #!/bin/bash
-find . -type d -empty -print | sed 's/.*\///'
-find . -type f -empty -print | sed 's/.*\///'
-echo
+find . -empty | rev | cut -d '/' -f 1 | rev
 
